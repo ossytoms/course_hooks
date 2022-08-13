@@ -19,6 +19,7 @@ import ReactForms from "./ReactForms";
 import ListAndProps from "./ListAndProps";
 import UseCallbackTest from "./UseCallbackTest";
 import TernaryOperator from "./TernaryOperator";
+import NewFile from "./NewFile";
 
 export default function App() {
   
@@ -51,6 +52,7 @@ export default function App() {
         <ListAndProps />
         <UseCallbackTest />
         <TernaryOperator />
+        <NewFile />
       </div>
     </>
   );
