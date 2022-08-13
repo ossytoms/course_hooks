@@ -7,6 +7,10 @@ const TernaryOperator = () => {
     setAgeCheckTested(ageCheckTest)
   };
 
+  const arrowFunction = () => {
+    
+  }
+
   return (
     <>
       age:{age} ageCheck:{ageCheckTested}
