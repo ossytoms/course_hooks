@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 export default function ReactForms() {
-  const [inputs, setInputs] = useState({});
+  const [inputs, setInputs] = useState({ "country": "Sweden" });
   const [buttonValue, setButtonValue] = useState("Submit");
   const [myCountry, setMyCountry] = useState("Sweden");
 
@@ -13,9 +13,8 @@ export default function ReactForms() {
   const handleChange = (e) => {
     const name = e.target.name;
     const value = e.target.value;
-    const text = e.target.text;
-    const country = e.target.country;
     setInputs((values) => ({ ...values, [name]: value }));
+
   };
 
   return (
@@ -25,7 +24,7 @@ export default function ReactForms() {
           <li>
             <select
               name="country"
-              value={inputs.country || ""}
+              value={inputs.country}
               onChange={handleChange}
             >
               <option value="Italy">Italy</option>
